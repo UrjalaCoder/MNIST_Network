@@ -21,4 +21,4 @@ Network filename is just the name of the file eg. `myNetwork.npy`. The program a
 If you specify a `TEST_IMAGE_PATH` the network tries to guess the number that is (hopefully) contained in the image.
 The image should be a 28x28 8-bit grayscale PNG image of a number. The number should be in white and the background in black.
 Also make sure that the image is centered in the picture with atleast 4 pixel margins on every side.
-The repository contains one test image: `test_image.png`. If you want to try your own please include it in the root directory of the project.
+The repository contains one test image: `test_image.png`. If you want to try your own please include it in the **root** directory of the project.
