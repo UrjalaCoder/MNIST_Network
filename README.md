@@ -1,6 +1,6 @@
 # MNIST_Network
 
-This repository contains a Python3 implementation of a neural network. The network is used to identify handwritten digits from images.
+This repository contains a Python3 implementation of a neural network. The network is used to identify handwritten digits from images. The dataset is the famous MNIST dataset.
 
 ## Usage
 
@@ -22,3 +22,21 @@ If you specify a `TEST_IMAGE_PATH` the network tries to guess the number that is
 The image should be a 28x28 8-bit grayscale PNG image of a number. The number should be in white and the background in black.
 Also make sure that the image is centered in the picture with atleast 4 pixel margins on every side.
 The repository contains one test image: `test_image.png`. If you want to try your own please include it in the **root** directory of the project.
+
+## Repository files and folders
+
+  * `network.py` This file contains the 'Network' class. This class contains the actual implementation of the neural network.
+  * `test.py` This file is used to test the network. Usage information is in the **Usage** section.
+  * `train.py` This is the file that is used to train the network. Usage information is in the **Usage** section.
+  * `data_helper.py` This file should not be executed on its own. It's just used to contain some helpful functions that the other files utilize.
+  * `test_image.png` Included test image. Image contains a picture of the digit (2).
+  * `/data` This folder contains the training and testing data. It is the MNIST dataset.
+  
+## Dependencies
+
+This python project requires these to work properly:
+  * [python-mnist](https://github.com/sorki/python-mnist) Used to load the MNIST data. (Version 0.6)
+  * [numpy](https://github.com/numpy/numpy) Used for matrix and vector calculations. (Version 1.15.4)
+  * [matplotlib](https://github.com/matplotlib/matplotlib) Used to display images. (Version 3.0.2)
+
+All of them can be installed using `pip install`.
