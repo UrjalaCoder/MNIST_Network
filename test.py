@@ -70,7 +70,8 @@ def main():
     try:
         test_testing_data = (sys.argv[1].upper() == "True" or sys.argv[1].upper() == "T")
         file_name = sys.argv[2]
-        test_file_path = sys.argv[3]
+        if len(sys.argv) > 3:
+            test_file_path = sys.argv[3]
     except IndexError:
         print("Invalid arguments\nUsage: python test.py [TEST_TEST_DATA] [NETWORK_FILENAME] [TEST_IMAGE_PATH]")
         return
@@ -80,7 +81,8 @@ def main():
     net.biases = arc[1]
     if test_testing_data:
         test_network(net, testing_data)
-    real_image(net, test_file_path)
+    if test_file_path != None:
+        real_image(net, test_file_path)
 
 if __name__ == "__main__":
     main()
