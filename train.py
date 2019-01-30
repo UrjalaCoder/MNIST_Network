@@ -48,6 +48,7 @@ def main():
 
     mndata = MNIST("./data")
     training_data = prepare_training_data(mndata)
+    print("Data loaded!. Starting training...")
     net.train(training_data, max_counter, tr, batch_size)
     Network.store("/".join(['nets', file_name]), (net.weights, net.biases))
 

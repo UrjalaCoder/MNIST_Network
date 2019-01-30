@@ -71,7 +71,6 @@ class Network:
             total_cost = total_cost + self.cost_function(guess, y)
         self.weights = self.weights - (tr/len(mini_batch)) * nabla_weights
         self.biases = self.biases - (tr/len(mini_batch)) * nabla_biases
-        # print(total_cost / len(mini_batch))
 
     # Main training function -->
     def train(self, data, cutoff, tr, batch_size):
@@ -87,7 +86,7 @@ class Network:
             counter = counter + 1
             batch = self.get_mini_batch(data, batch_size)
             self.SGD(tr, batch)
-            print(counter)
+            print("Iteration: " + str(counter))
 
     def get_mini_batch(self, data, size):
         mini_batch = []
