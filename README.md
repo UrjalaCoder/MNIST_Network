@@ -4,7 +4,7 @@ This repository contains a Python3 implementation of a neural network. The netwo
 
 ## Usage
 
-You can first train a network using the file 'train.py'.
+You can first train a network using the file 'train.py'. Please note that the command takes a while to start training. It also outputs some progress info to the screen.
 
 `python(3) train.py [TRAINING_ITERATIONS] [TRAINING_RATE] [TRAINING_BATCH_SIZE] [FILENAME]`
 
@@ -51,7 +51,7 @@ The second line is the network's guess what the image from `[TEST_IMAGE_PATH]` i
   * `data_helper.py` This file should not be executed on its own. It's just used to contain some helpful functions that the other files utilize.
   * `test_image.png` Included test image. Image contains a picture of the digit (2).
   * `/data` This folder contains the training and testing data. It is the MNIST dataset.
-  
+
 ## Dependencies
 
 This python project requires these to work properly:
