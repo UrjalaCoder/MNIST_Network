@@ -83,7 +83,7 @@ def main():
         test_network(net, testing_data)
     if test_file_path != None:
         real_image(net, test_file_path)
-        
+
 
 if __name__ == "__main__":
     main()

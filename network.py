@@ -71,7 +71,7 @@ class Network:
             total_cost = total_cost + self.cost_function(guess, y)
         self.weights = self.weights - (tr/len(mini_batch)) * nabla_weights
         self.biases = self.biases - (tr/len(mini_batch)) * nabla_biases
-        print(total_cost / len(mini_batch))
+        # print(total_cost / len(mini_batch))
 
     # Main training function -->
     def train(self, data, cutoff, tr, batch_size):
