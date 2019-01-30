@@ -35,6 +35,11 @@ Example test output:
 
 ![Example](https://github.com/UrjalaCoder/MNIST_Network/blob/master/readme_pictures/example_output_test.PNG)
 
+Test image used:
+
+![Example](https://github.com/UrjalaCoder/MNIST_Network/blob/master/test_image.png)
+
+
 The first line is the percentage that the network got right from the testing dataset. It only appears when `[FLAG_TO_USE_TEST_DATA]` is set to `True`.
 The second line is the network's guess what the image from `[TEST_IMAGE_PATH]` is. The higher the percentage the higher the confidence the network has.
 
