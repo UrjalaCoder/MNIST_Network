@@ -14,7 +14,7 @@ Example train command:
 
 Please make sure that the filename ends in `.npy` for the correct format.
 
-After training the dataset it appears in a folder called `nets` with the filename you gave it.
+After training the dataset it appears in a folder called `nets` with the filename you gave it. The `nets` directory contains a default network, called `net.npy`, which has been trained with 10000 iterations with batch size of 10 and training rate of 1.
 You can then use the trained network by using the 'test.py' python program.
 
 `python(3) test.py [FLAG_TO_USE_TEST_DATA] [NETWORK_FILENAME] [TEST_IMAGE_PATH]`
@@ -59,4 +59,4 @@ This python project requires these to work properly:
   * [numpy](https://github.com/numpy/numpy) Used for matrix and vector calculations. (Version 1.15.4)
   * [matplotlib](https://github.com/matplotlib/matplotlib) Used to display images. (Version 3.0.2)
 
-All of them can be installed using `pip install`.
+All of them can be installed automagically by running `pip install -r requirements.txt` in the root directory, assuming you have an appropriate version of Python and pip.
